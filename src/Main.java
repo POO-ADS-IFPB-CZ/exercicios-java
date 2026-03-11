@@ -14,10 +14,10 @@ public class Main{
         double delta = delta(a,b,c);
 
         if(delta<0) System.out.println("Não possui raizes reais");
-        if(delta==0) System.out.println("Só possui uma raiz: "+(-b)/(2*a));
+        if(delta==0) System.out.printf("Só possui uma raiz: %.2f",(-b)/(2*a));
         if(delta>0){
-            System.out.println("x1 = "+(-b+Math.sqrt(delta))/(2*a));
-            System.out.println("x2 = "+(-b-Math.sqrt(delta))/(2*a));
+            System.out.printf("x1 = %.2f\n",(-b+Math.sqrt(delta))/(2*a));
+            System.out.printf("x2 = %.2f",(-b-Math.sqrt(delta))/(2*a));
         }
 
     }
